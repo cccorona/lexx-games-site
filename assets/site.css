@@ -1,0 +1,104 @@
+:root {
+  --bg: #f4efe6;
+  --ink: #1a1612;
+  --muted: #5c534a;
+  --accent: #c44b2a;
+  --card: #fffdf8;
+  --line: #d9cfc0;
+  --max: 42rem;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+  min-height: 100vh;
+}
+a { color: var(--accent); }
+a:hover { text-decoration-thickness: 2px; }
+header, main, footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem;
+}
+header {
+  border-bottom: 1px solid var(--line);
+  padding-top: 1.75rem;
+}
+header .brand {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+}
+header h1 {
+  margin: 0.35rem 0 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+nav.site {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+nav.site a { text-decoration: none; color: var(--ink); }
+nav.site a:hover { color: var(--accent); }
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0.75rem 0 1.5rem;
+}
+main h2 {
+  font-size: 1.2rem;
+  margin: 1.75rem 0 0.5rem;
+}
+main ul { padding-left: 1.2rem; }
+main li { margin: 0.35rem 0; }
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+main th, main td {
+  text-align: left;
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+main th { background: #ebe3d6; }
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+.card-list li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 0.9rem 1rem;
+  margin: 0.6rem 0;
+}
+.card-list a { font-weight: 700; text-decoration: none; }
+.note {
+  background: var(--card);
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+}
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding-bottom: 2.5rem;
+}
+footer a { color: var(--muted); }
